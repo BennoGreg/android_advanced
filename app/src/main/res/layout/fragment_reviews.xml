@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/TextAppearance.MaterialComponents.Overline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/distance_large"
+        android:text="@string/text_ratings_and_reviews" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txvAverageRating"
+                style="@style/TextAppearance.MaterialComponents.Headline3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RatingBar
+                android:id="@+id/rtbAverageRating"
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:isIndicator="true"
+                android:numStars="5" />
+
+            <TextView
+                android:id="@+id/txvTotalRatings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/distance_small" />
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/distance_medium">
+
+            <TextView
+                android:id="@+id/txvFive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_five"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ProgressBar
+                android:id="@+id/prbRatingsFive"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/distance_small"
+                app:layout_constraintBottom_toBottomOf="@id/txvFive"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/txvFive"
+                app:layout_constraintTop_toTopOf="@id/txvFive" />
+
+            <TextView
+                android:id="@+id/txvFour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_four"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txvFive" />
+
+            <ProgressBar
+                android:id="@+id/prbRatingsFour"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/distance_small"
+                app:layout_constraintBottom_toBottomOf="@id/txvFour"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/txvFour"
+                app:layout_constraintTop_toTopOf="@id/txvFour" />
+
+            <TextView
+                android:id="@+id/txvThree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_three"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txvFour" />
+
+            <ProgressBar
+                android:id="@+id/prbRatingsThree"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/distance_small"
+                app:layout_constraintBottom_toBottomOf="@id/txvThree"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/txvThree"
+                app:layout_constraintTop_toTopOf="@id/txvThree" />
+
+            <TextView
+                android:id="@+id/txvTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_two"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txvThree" />
+
+            <ProgressBar
+                android:id="@+id/prbRatingsTwo"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/distance_small"
+                app:layout_constraintBottom_toBottomOf="@id/txvTwo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/txvTwo"
+                app:layout_constraintTop_toTopOf="@id/txvTwo" />
+
+            <TextView
+                android:id="@+id/txvOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_one"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txvTwo" />
+
+            <ProgressBar
+                android:id="@+id/prbRatingsOne"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/distance_small"
+                app:layout_constraintBottom_toBottomOf="@id/txvOne"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/txvOne"
+                app:layout_constraintTop_toTopOf="@id/txvOne" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnAddReview"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/distance_small"
+        android:text="@string/text_add_review" />
+</LinearLayout>

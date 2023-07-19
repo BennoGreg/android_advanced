@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Canteen Checker MC</string>
+
+    <!-- CanteenActivity -->
+    <string name="hint_filter">Filter</string>
+    <string name="text_search">Search</string>
+
+    <!-- CanteenDetailsActivity -->
+    <string name="text_dish">Dish of the day</string>
+    <string name="text_waiting_time">Current waiting time</string>
+    <string name="text_minutes">minutes</string>
+    <string name="text_location">Location</string>
+    <string name="text_show_website">Show website</string>
+    <string name="message_canteen_not_found">Canteen not found</string>
+    <string name="text_call">Call</string>
+    <string name="message_no_call_permission">No permission to make phone call</string>
+    <string name="message_call_not_possible">Call not possible</string>
+    <string name="message_show_website_not_possible">Showing of website not possible</string>
+
+    <!-- LoginActivity -->
+    <string name="activity_login">Login</string>
+    <string name="hint_user_name">User name</string>
+    <string name="hint_password">Password</string>
+    <string name="text_log_in">Log in</string>
+    <string name="message_login_failed">Login not successful - please try again</string>
+
+    <!-- ReviewsFragment -->
+    <string name="text_ratings_and_reviews">Ratings and reviews</string>
+    <string name="text_five">5</string>
+    <string name="text_four">4</string>
+    <string name="text_three">3</string>
+    <string name="text_two">2</string>
+    <string name="text_one">1</string>
+    <string name="text_add_review">Add review</string>
+    <!-- AddReviewDialog -->
+    <string name="dialog_add_review">Add review</string>
+    <string name="hint_remark">Remark</string>
+    <string name="text_send">Send</string>
+    <string name="message_review_created">Review has been created</string>
+    <string name="message_review_not_created">Could not create review - please try again</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
